@@ -42,8 +42,8 @@ struct AnimalDetailView: View {
                     .multilineTextAlignment(.leading)
                     .foregroundColor(.accentColor)
                     .padding(.horizontal)
-                //: GALLERY
                 
+                //: GALLERY
                 Group {
                     HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
                     
@@ -61,10 +61,31 @@ struct AnimalDetailView: View {
                 .padding(.horizontal)
                 
                 //: DESCRIPTION
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
+                
                 
                 //: MAP
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                }
+                .padding(.horizontal)
+                InsetMapView()
                 
                 //: LINK
+                Group {
+                    HeadingView(headingImage: "books.vertical", headingText: "Learn More")
+                    ExternalWeblinkView(animal: animal)
+                }
+                .padding(.horizontal)
+                
+                
             }//: VSTACK
         }//: SCROLL
         .navigationBarTitle("Learn about \(animal.name)",
