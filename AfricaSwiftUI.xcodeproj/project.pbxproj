@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		802A49F626E2201B00D3EFDA /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A49F526E2201B00D3EFDA /* AnimalGridItemView.swift */; };
+		802A49FC26E2306B00D3EFDA /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802A49FB26E2306B00D3EFDA /* Stickers.xcassets */; };
+		802A4A0026E2306B00D3EFDA /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 802A49F926E2306200D3EFDA /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		802A4A0626E2379B00D3EFDA /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A4A0526E2379A00D3EFDA /* CreditsView.swift */; };
+		802A4A0926E23BB400D3EFDA /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A4A0826E23BB400D3EFDA /* CenterModifier.swift */; };
 		802CD6D526CA491600E29805 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802CD6D426CA491600E29805 /* AnimalModel.swift */; };
 		802CD6D726CA557A00E29805 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802CD6D626CA557A00E29805 /* AnimalDetailView.swift */; };
 		8056A27826CE7FB1000E4EFA /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8056A27726CE7FB1000E4EFA /* HeadingView.swift */; };
@@ -50,8 +54,37 @@
 		80F82B3826D3A2EA002E5A30 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F82B3726D3A2EA002E5A30 /* VideoListItemView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		802A49FE26E2306B00D3EFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C14FBA26BA7CC800E802B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 802A49F826E2306200D3EFDA;
+			remoteInfo = Stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		802A4A0426E2306B00D3EFDA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				802A4A0026E2306B00D3EFDA /* Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		802A49F526E2201B00D3EFDA /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
+		802A49F926E2306200D3EFDA /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		802A49FB26E2306B00D3EFDA /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		802A49FD26E2306B00D3EFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		802A4A0526E2379A00D3EFDA /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		802A4A0826E23BB400D3EFDA /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		802CD6D426CA491600E29805 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		802CD6D626CA557A00E29805 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		8056A27726CE7FB1000E4EFA /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
@@ -107,6 +140,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802A49FA26E2306300D3EFDA /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				802A49FB26E2306B00D3EFDA /* Stickers.xcassets */,
+				802A49FD26E2306B00D3EFDA /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
+		802A4A0726E23B9800D3EFDA /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				802A4A0826E23BB400D3EFDA /* CenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		8088960426D6295F005D8690 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				80C14FC426BA7CC800E802B8 /* AfricaSwiftUI */,
+				802A49FA26E2306300D3EFDA /* Stickers */,
 				80C14FC326BA7CC800E802B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				80C14FC226BA7CC800E802B8 /* AfricaSwiftUI.app */,
+				802A49F926E2306200D3EFDA /* Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +186,7 @@
 		80C14FC426BA7CC800E802B8 /* AfricaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				802A4A0726E23B9800D3EFDA /* Modifier */,
 				8088960426D6295F005D8690 /* Helper */,
 				80C1500126BAA59900E802B8 /* Extension */,
 				80C14FFE26BAA13A00E802B8 /* Model */,
@@ -213,6 +266,7 @@
 				809A079D26D79288002FBD50 /* MapAnnotationView.swift */,
 				8064532626DF67B70078DE37 /* MotionAnimationView.swift */,
 				802A49F526E2201B00D3EFDA /* AnimalGridItemView.swift */,
+				802A4A0526E2379A00D3EFDA /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +293,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		802A49F826E2306200D3EFDA /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 802A4A0126E2306B00D3EFDA /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				802A49F726E2306200D3EFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = 802A49F926E2306200D3EFDA /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		80C14FC126BA7CC800E802B8 /* AfricaSwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80C14FD026BA7CCB00E802B8 /* Build configuration list for PBXNativeTarget "AfricaSwiftUI" */;
@@ -246,10 +315,12 @@
 				80C14FBE26BA7CC800E802B8 /* Sources */,
 				80C14FBF26BA7CC800E802B8 /* Frameworks */,
 				80C14FC026BA7CC800E802B8 /* Resources */,
+				802A4A0426E2306B00D3EFDA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				802A49FF26E2306B00D3EFDA /* PBXTargetDependency */,
 			);
 			name = AfricaSwiftUI;
 			productName = AfricaSwiftUI;
@@ -266,6 +337,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					802A49F826E2306200D3EFDA = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					80C14FC126BA7CC800E802B8 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -285,11 +359,20 @@
 			projectRoot = "";
 			targets = (
 				80C14FC126BA7CC800E802B8 /* AfricaSwiftUI */,
+				802A49F826E2306200D3EFDA /* Stickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		802A49F726E2306200D3EFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802A49FC26E2306B00D3EFDA /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80C14FC026BA7CC800E802B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,8 +424,10 @@
 				802A49F626E2201B00D3EFDA /* AnimalGridItemView.swift in Sources */,
 				8056A27A26CE81F0000E4EFA /* InsetGalleryView.swift in Sources */,
 				80F82B3826D3A2EA002E5A30 /* VideoListItemView.swift in Sources */,
+				802A4A0626E2379B00D3EFDA /* CreditsView.swift in Sources */,
 				80C1500326BAA5B200E802B8 /* CodableBundleExtension.swift in Sources */,
 				8064532726DF67B70078DE37 /* MotionAnimationView.swift in Sources */,
+				802A4A0926E23BB400D3EFDA /* CenterModifier.swift in Sources */,
 				8056A27826CE7FB1000E4EFA /* HeadingView.swift in Sources */,
 				8088960326D627B8005D8690 /* VideoPlayerView.swift in Sources */,
 			);
@@ -350,7 +435,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		802A49FF26E2306B00D3EFDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 802A49F826E2306200D3EFDA /* Stickers */;
+			targetProxy = 802A49FE26E2306B00D3EFDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		802A4A0226E2306B00D3EFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AfricaSwiftUI;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andredippenaar.AfricaSwiftUI.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		802A4A0326E2306B00D3EFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AfricaSwiftUI;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andredippenaar.AfricaSwiftUI.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		80C14FCE26BA7CCB00E802B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -530,6 +661,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		802A4A0126E2306B00D3EFDA /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				802A4A0226E2306B00D3EFDA /* Debug */,
+				802A4A0326E2306B00D3EFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80C14FBD26BA7CC800E802B8 /* Build configuration list for PBXProject "AfricaSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
